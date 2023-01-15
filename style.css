@@ -1,0 +1,118 @@
+*,
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.header h1 {
+    color: antiquewhite;
+}
+
+.hamburger svg {
+    width: 25px;
+    fill: black;
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.main-section h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.card-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.card {
+    width: 340px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card h1 {
+    text-transform: uppercase;
+    color: burlywood;
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.card p {
+    padding-bottom: 15px;
+}
+
+.price-and-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-and-button p {
+    color: burlywood;
+    font-family: sans-serif;
+}
+
+.price-and-button button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.price-and-button button:hover {
+    opacity: 0.6;
+}
+
+@media (max-width:710px){
+    .card{
+        width: 450px;
+        padding: 20px 30px;
+    }
+
+    .card img{
+        height: 250px;
+    }
+}
+
+@media (max-width:430px){
+    .card{
+        width: 300px;
+    }
+}
